@@ -4,17 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
     <style>
 
         body{
-            background-color:blue;
+            background-color:thistle;
+            background-size: cover;
+            /* background-image: url(Background.jpg); */
+            opacity: 0.7;
+            background-repeat: no-repeat;
+        
 
         }
-        </style>
 
-    
+      .main-header {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                padding: 10px 0;
+                background: #fff;
+               }
+
+      .header-container {
+                width: 100%;        
+                 margin: auto;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-between;
+           }
+      .nav-left,
+     .nav-right {
+          display: flex;
+           list-style: none;
+           gap: 30px;
+          
+           }
+
+       .nav-left li,
+      .nav-right li {
+           font-size: 15px;
+           cursor: pointer;
+           color: #333;
+           margin-top: 10px;
+          }
+
+        .logo img {
+           width: 180px;  
+           border-radius: 12px;
+           }
+
+      .contact-btn {
+      padding: 10px 20px;
+       border: none;
+       background: #0a1d2e;
+       color: white;
+       border-radius: 4px;
+        cursor: pointer;
+        
+       }
+
+      .contact-btn:hover {
+          opacity: 0.85;
+      }
+      .hero{
+        width: 600px;
+        height: 300px;
+           margin: auto;
+        margin-top: 40px ;
+     background-position: center;
+     display: grid;
+    justify-content: center;  
+      align-items: center;
+      word-spacing: 16px;
+     
+      }
+      .box{
+        width: 500px;
+        height: 150px;
+        border: 2px solid #3AA2FF;
+        font-size: 25px;
+       word-spacing: 6px;
+       letter-spacing:1px ;
+        border-radius: 4px;
+        padding: 20px 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p{
+        font-size: 13px;
+        
+      }
+     .btn-group{
+        
+        justify-content: center;
+        display: flex;    
+        gap: 20px;
+     }
+     .btn{
+        padding: 12px 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 31px;
+     }
+     .btn.primary {
+    background: white;
+    color: black;
+}
+.btn.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+/* //2 page// */
+.box2{
+    background-color: burlywood;
+    height: auto;
+    width: auto;
+}
+
+
+
+     
+
+ 
+ 
+       
+        </style>
+</head>
+<body>
+    <div class="main-header">
+         <div class="header-container">
+        <ul class="nav-left"">
+            <li>About Us </li>
+            <li>Collections</li>
+            <li>Why Passero</li>
+            <li>Brand Store</li>
+        </ul>
+        <div class="logo">
+            <img src="images.png">
+        </div>
+         <ul class="nav-right">
+      <li>Downloads</li>
+      <li>News & Events</li>
+      <li><button class="contact-btn">Contact Us</button></li>
+    </ul>
+    </div>
+   
+    </div>
+     <div class="hero">
+        <div class="box"><h2>From Manufacturers to<br>
+            Inspired Spaces.</h2></div>
+        <div class="box">
+      <p>Discover Passero Brand Stores—where quality meets curated design.
+   </p>    
+  <div class="btn-group">
+    <button class="btn primary">Find a Brand Store</button>
+    <button class="btn secondary">Explore Collections</button>
+  </div>
+  </div>
+     </div>
+     <div class="box2"></div>
     
 </body>
 </html>
